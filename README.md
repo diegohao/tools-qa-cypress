@@ -1,5 +1,7 @@
 # tools-qa-cypress
 
+[![CI](https://github.com/diegohao/tools-qa-cypress/actions/workflows/ci.yml/badge.svg)](https://github.com/diegohao/tools-qa-cypress/actions/workflows/ci.yml)
+
 Teste funcional de elementos comuns da web.
 
 # Elements
