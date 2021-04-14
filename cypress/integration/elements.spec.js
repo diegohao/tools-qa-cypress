@@ -2,11 +2,13 @@
 
 import loc from '../support/locators'
 
-describe('Teste funcional de elements', () => {    
+describe('Teste funcional de elements', () => {
+    beforeEach(() => {
+        cy.visit('/')
+        cy.get(loc.MENU.ELEMENTS).click()
+    })
 
     it('Validar Text Box', () => {
-        cy.visit('https://www.demoqa.com')
-        cy.get(loc.MENU.ELEMENTS).click()
         cy.get(loc.ELEMENTS.TEXTBOX).should('exist').click()
         cy.get(loc.TEXTBOX.FULL_NAME).type('Diego Henrique')
         cy.get(loc.TEXTBOX.EMAIL).type('diego@teste.com')
@@ -17,8 +19,6 @@ describe('Teste funcional de elements', () => {
     })
 
     it.only('Validar Check box', () => {
-        cy.visit('https://www.demoqa.com')
-        cy.get(loc.MENU.ELEMENTS).click()
         cy.get(loc.ELEMENTS.CHECKBOX).should('exist').click()
         //TODO continuar implementação        
     })
