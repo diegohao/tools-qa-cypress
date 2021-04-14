@@ -7,13 +7,20 @@ const locators = {
     //INTERACTIONS:    
   },
   ELEMENTS: {
-    TEXT_BOX: ':nth-child(1) > .element-list > .menu-list > #item-0'
-    //CHECK_BOX:
-    //RADIO_BUTTON:
+    TEXTBOX: ':nth-child(1) > .element-list > .menu-list > #item-0'
+    //CHECKBOX:
+    //RADIOBUTTON:
     //WEB_TABLES:
     //BUTTONS:
     //LINKS:
     //DYNAMIC_PROPERTIES:
+  },
+  TEXTBOX: {
+    FULL_NAME: '#userName',
+    EMAIL: '#userEmail',
+    CURRENT_ADDRESS: '#currentAddress',
+    PERMANENT_ADDRESS: '#permanentAddress',
+    BTN: '#submit'
   }
 }
 
