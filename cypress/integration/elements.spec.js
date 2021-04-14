@@ -13,5 +13,13 @@ describe('Teste funcional de elements', () => {
         cy.get(loc.TEXTBOX.CURRENT_ADDRESS).type('Rua Cypress, 91')
         cy.get(loc.TEXTBOX.PERMANENT_ADDRESS).type('Casa ')
         cy.get(loc.TEXTBOX.BTN).should('be.enabled').click()
+        //TODO validar resultado        
+    })
+
+    it.only('Validar Check box', () => {
+        cy.visit('https://www.demoqa.com')
+        cy.get(loc.MENU.ELEMENTS).click()
+        cy.get(loc.ELEMENTS.CHECKBOX).should('exist').click()
+        //TODO continuar implementação        
     })
 })

@@ -7,8 +7,8 @@ const locators = {
     //INTERACTIONS:    
   },
   ELEMENTS: {
-    TEXTBOX: ':nth-child(1) > .element-list > .menu-list > #item-0'
-    //CHECKBOX:
+    TEXTBOX: ':nth-child(1) > .element-list > .menu-list > #item-0',
+    CHECKBOX: ':nth-child(1) > .element-list > .menu-list > #item-1'
     //RADIOBUTTON:
     //WEB_TABLES:
     //BUTTONS:
