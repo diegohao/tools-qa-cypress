@@ -15,7 +15,11 @@ describe('Teste funcional de elements', () => {
         cy.get(loc.TEXTBOX.CURRENT_ADDRESS).type('Rua Cypress, 91')
         cy.get(loc.TEXTBOX.PERMANENT_ADDRESS).type('Casa ')
         cy.get(loc.TEXTBOX.BTN).should('be.enabled').click()
-        //TODO validar resultado        
+        
+        cy.get(loc.TEXTBOX.RESULT_NAME).should('contains.text', 'Diego Henrique');
+        cy.get(loc.TEXTBOX.RESULT_EMAIL).should('contains.text', 'diego@teste.com');
+        cy.get(loc.TEXTBOX.RESULT_PERMANENT_ADDRESS).should('contains.text', 'Rua Cypress, 91');
+        cy.get(loc.TEXTBOX.RESULT_PERMANENT_ADDRESS).should('contains.text', 'Casa');
     })
 
     it.only('Validar Check box', () => {
