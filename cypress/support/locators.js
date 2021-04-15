@@ -20,7 +20,11 @@ const locators = {
     EMAIL: '#userEmail',
     CURRENT_ADDRESS: '#currentAddress',
     PERMANENT_ADDRESS: '#permanentAddress',
-    BTN: '#submit'
+    BTN: '#submit',
+    RESULT_NAME: '#name',
+    RESULT_EMAIL: '#email',
+    RESULT_PERMANENT_ADDRESS: '.border > #currentAddress',
+    RESULT_PERMANENT_ADDRESS: '.border > #permanentAddress'
   }
 }
 
