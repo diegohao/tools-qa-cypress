@@ -24,6 +24,10 @@ describe('Teste funcional de elements', () => {
 
     it.only('Validar Check box', () => {
         cy.get(loc.ELEMENTS.CHECKBOX).should('exist').click()
-        //TODO continuar implementação        
+        cy.get('.rct-option-expand-all').click()
+        cy.get('#tree-node > :nth-child(2) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1)').should('be.visible').and('have.text', 'Desktop').click()
+        cy.get(':nth-child(2) > :nth-child(1) > :nth-child(2) > :nth-child(1) > ol').should('be.visible')
+        cy.get(':nth-child(2) > :nth-child(2) > :nth-child(2) > ol > :nth-child(2) > .rct-text > label > .rct-checkbox > .rct-icon').click()
+        //TODO continuar implementação
     })
 })
